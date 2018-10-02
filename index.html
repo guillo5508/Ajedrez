@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajedrez</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/assets/favicon.png" />
+	<!-- Import libraries -->
+	<script src="js/libraries/jquery-3.3.1.min.js"></script>
+	<script src="js/libraries/js.cookie.js"></script>
+	<!-- Import all shit -->
+	<script src="js/Movimientos.js"></script>
+	<script src="js/Functions.js"></script>
+	<script src="js/Main.js"></script>
+	<!-- Import style -->
+	<link href="css/font-awesome.css" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<!-- Tablero -->
+
+	<div class="main grab">
+	
+		<div class="info">
+			<h3 class="turno">Turno: <span id="turno">Jugador 1</span></h3>
+			<button id="reset" class="button">Reiniciar el juego</button>
+		</div>
+
+		<div id="chessboard"></div>	
+
+	</div>
+
+
+</body>
+</html>

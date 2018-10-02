@@ -1,0 +1,320 @@
+* {
+	padding: 0;
+	border: 0;
+}
+
+html {
+	background-color: #331504;
+}
+
+.button {
+	background-color: red;
+	width: 180px;
+	height: 30px;
+	color: white;
+	box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+
+.info {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+}
+
+h3 {
+	display: inline-block;
+	margin: 0;
+}
+
+.turno {
+	float: left;
+	color: white;
+	margin-top: 10px;
+	text-shadow: 8px 8px 20px #000000;
+}
+
+#reset {
+	float: right;
+}
+
+.main {
+	max-width: 100%;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+
+#chessboard {
+	float: left;
+	box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+.tile {
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+
+.black {
+	background-color: #662f15;
+	color:white;
+}
+
+.white {
+	background-color: #a46447;
+  	color:black;
+}
+
+/* Piezas */
+
+.piece {
+	display:inline-block;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+	position: absolute;
+	z-index: 10;
+}
+
+
+.player1 i.icon{
+	color: #fffc;
+}
+
+.player2 i.icon{
+	color: #211f1f;
+}
+
+i.icon {
+	display: block;
+	padding-top: 2px;
+	padding-left: 3px;
+	font-size:150%;
+}
+
+/* Piezas del jugador 1 */
+
+#piece1 {
+	top:60px;
+	left:15px;
+}
+
+#piece2 {
+	top:60px;
+	left:85px;
+}
+
+#piece3 {
+	top:60px;
+	left:157px;
+}
+
+#piece4 {
+	top:60px;
+	left:221px;
+}
+
+#piece5 {
+	top:60px;
+	left:288px;
+}
+
+#piece6 {
+	top:60px;
+	left:367px;
+}
+
+#piece7 {
+	top:60px;
+	left:435px;
+}
+
+#piece8 {
+	top:60px;
+	left:504px;
+}
+
+#piece9 {
+	top:128px;
+	left:18px;
+}
+
+#piece10 {
+	top:128px;
+	left:88px;
+}
+
+#piece11 {
+	top:128px;
+	left:158px;
+}
+
+#piece12 {
+	top:128px;
+	left:228px;
+}
+
+#piece13 {
+	top:128px;
+	left:298px;
+}
+
+#piece14 {
+	top:128px;
+	left:368px;
+}
+
+#piece15 {
+	top:128px;
+	left:438px;
+}
+
+#piece16 {
+	top:128px;
+	left:508px;
+}
+
+/* Piezas del jugador 2 */
+
+#piece17 {
+	top:476px;
+	left:18px;
+}
+
+#piece18 {
+	top:476px;
+	left:88px;
+}
+
+#piece19 {
+	top:476px;
+	left:158px;
+}
+
+#piece20 {
+	top:476px;
+	left:228px;
+}
+
+#piece21 {
+	top:476px;
+	left:298px;
+}
+
+#piece22 {
+	top:476px;
+	left:368px;
+}
+
+#piece23 {
+	top:476px;
+	left:438px;
+}
+
+#piece24 {
+	top:476px;
+	left:508px;
+}
+
+#piece25 {
+	top:550px;
+	left:15px;
+}
+
+#piece26 {
+	top:550px;
+	left:85px;
+}
+
+#piece27 {
+	top:550px;
+	left:157px;
+}
+
+#piece28 {
+	top:550px;
+	left:219px;
+}
+
+#piece29 {
+	top:550px;
+	left:291px;
+}
+
+#piece30 {
+	top:550px;
+	left:367px;
+}
+
+#piece31 {
+	top:550px;
+	left:435px;
+}
+
+#piece32 {
+	top:550px;
+	left:504px;
+}
+.grab {cursor: -webkit-grab; cursor: grab;}
+
+/* Fin piezas */
+
+#instructionbox {
+	width: 450px;
+  	font-family: Arial;
+  	font-size: 100%;
+  	position: absolute;
+  	margin-left: 550px;
+  	margin-top: 250px;
+}
+
+.hover {
+	-webkit-box-shadow: inset 0px 0px 5px 5px #fb4f00;
+	box-shadow: inset 0px 0px 5px 5px #fb4f00;
+}
+
+.legal {
+	-webkit-box-shadow: inset 0px 0px 0px 5px #f00;
+	box-shadow: inset 0px 0px 0px 5px #f00;
+}
+
+.legal.white {
+	background-color: #FF000080;
+}
+
+.legal.black {
+	background-color: #7E1818;
+}
+
+.legal:hover {
+	background-color: #ca0909;
+   -webkit-box-shadow: 0px 0px 40px 10px #ffa;
+   box-shadow: inset 0px 0px 0px 5px #f00;
+}
+
+.smoothmove {
+	-webkit-transition: top 0.35s ease-in-out, left 0.35s ease-in-out;
+	-moz-transition: top 0.35s ease-in-out, left 0.35s ease-in-out;
+	-ms-transition: top 0.35s ease-in-out, left 0.35s ease-in-out;
+	-o-transition: top 0.35s ease-in-out, left 0.35s ease-in-out;
+	transition: top 0.35s ease-in-out, left 0.35s ease-in-out;
+}
+
+.smoothfade {
+	-webkit-transition: box-shadow 0.25s ease-out;
+	-moz-transition: box-shadow 0.25s ease-out;
+	-ms-transition: box-shadow 0.25s ease-out;
+	-o-transition: box-shadow 0.25s ease-out;
+	transition: box-shadow 0.25s ease-out;
+
+	-webkit-transition: background-color 0.25s ease-in time;
+	-moz-transition: background-color 0.25s ease-in time;
+	-ms-transition: background-color 0.25s ease-in time;
+	-o-transition: background-color 0.25s ease-in time;
+	transition: background-color 0.25s ease-in time;
+}
